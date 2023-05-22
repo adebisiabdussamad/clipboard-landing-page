@@ -38,3 +38,38 @@ h1 {
   line-height: 24px;
   color: hsl(201, 11%, 66%);
 }
+
+.download-links {
+  list-style: none;
+  display: flex;
+  width: 350px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.download-links a {
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: a;
+}
+
+.download-links a:nth-of-type(1) {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.download-links a:nth-of-type(1):hover {
+  box-shadow: hsla(171, 66%, 44%, 0.822) 0px 13px 27px -35px, hsla(171, 66%, 44%, 0.774) 0px 8px 16px -8px;
+}
+
+.download-links .link a {
+  background-color: hsl(233, 100%, 69%);
+}
+
+.download-links .link a:hover {
+  box-shadow: hsl(233, 100%, 69%) 0px 13px 27px -35px, hsl(233, 100%, 69%) 0px 8px 16px -8px;
+}
