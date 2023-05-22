@@ -73,3 +73,22 @@ h1 {
 .download-links .link a:hover {
   box-shadow: hsl(233, 100%, 69%) 0px 13px 27px -35px, hsl(233, 100%, 69%) 0px 8px 16px -8px;
 }
+
+.track-section {
+  width: 45%;
+  margin: 100px auto;
+
+}
+
+.track-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: hsl(210, 10%, 33%);
+}
+
+.track-section p {
+  font-size: 1rem;
+  line-height: 24px;
+  color: hsl(201, 11%, 66%);
+  text-align: center;
+}
