@@ -113,6 +113,45 @@ h1 {
   text-align: center;
 }
 
+.info {
+  display: flex;
+  align-items: center;
+  height: 500px;
+}
+
+.info-lap,
+.info-list {
+  width: 50%;
+}
+
+.info-lap img {
+  width: 100%;
+  height: 100%;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  /* margin-right: 10%; */
+  margin-left: 10%;
+}
+
+.info-list li {
+  height: 120px;
+  width: 55%;
+}
+
+.info-list h4 {
+  font-size: 1.3rem;
+  color: hsl(210, 10%, 33%);
+}
+
+.info-list p {
+  font-size: 1rem;
+  line-height: 24px;
+  color: hsl(201, 11%, 66%);
+}
+
 @media(max-width:1097px) {
   .company-logo {
     bottom: 50%;
@@ -154,6 +193,24 @@ h1 {
     width: 100%;
     display: block;
   }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .info-lap,
+  .info-list {
+    width: 85%;
+    margin: 40px auto;
+  }
+
+  .info-list li {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+
 }
 
 @media(max-width:400px) {
