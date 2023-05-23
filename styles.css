@@ -102,7 +102,7 @@ h1 {
 .track-section h2 {
   text-align: center;
   font-size: 2rem;
-  color: hsl(210, 10%, 33%);
+  color: hsl(212, 10%, 33%);
   margin-bottom: 10px;
 }
 
@@ -225,6 +225,22 @@ h1 {
 .download {
   width: 40%;
   margin: 0 auto;
+}
+
+footer {
+  background-color: #F5F6F8;
+
+}
+
+.foot {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.foot ul {
+  list-style: none;
+  padding: 0;
 }
 
 @media(max-width:1097px) {
