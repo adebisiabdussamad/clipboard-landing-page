@@ -152,6 +152,20 @@ h1 {
   color: hsl(201, 11%, 66%);
 }
 
+.more h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: hsl(210, 10%, 33%);
+}
+
+.more p {
+  font-size: 1rem;
+  line-height: 24px;
+  color: hsl(201, 11%, 66%);
+  text-align: center;
+}
+
 @media(max-width:1097px) {
   .company-logo {
     bottom: 50%;
@@ -175,6 +189,10 @@ h1 {
     height: 20%;
   }
 
+  main {
+    height: 1350px;
+  }
+
   .company-logo {
     margin-top: 20px;
 
@@ -190,7 +208,7 @@ h1 {
   }
 
   .download-links {
-    width: 100%;
+    width: 80%;
     display: block;
   }
 
