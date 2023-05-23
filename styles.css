@@ -209,11 +209,26 @@ h1 {
   margin-bottom: 10px;
 }
 
-
+.companies {
+  list-style: none;
+  padding: 0;
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+}
 
 @media(max-width:1097px) {
   .company-logo {
     bottom: 50%;
+  }
+
+  .companies {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
   }
 }
 
@@ -285,6 +300,11 @@ h1 {
   .more-info li {
     width: 80%;
     margin: 20px 0;
+  }
+
+  .companies {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 }
 
