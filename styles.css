@@ -6,6 +6,11 @@
   font-family: 'Bai Jamjuree', sans-serif;
 }
 
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
 header {
   height: 300px;
 }
@@ -14,15 +19,21 @@ header {
   width: 100%;
 }
 
+.mobile-bg {
+  display: none;
+}
+
 .company-logo {
   width: 100px;
   margin: 0 auto;
   position: relative;
-  bottom: 12.5rem;
+  bottom: 70%;
 }
 
 .header-text {
   text-align: center;
+  width: 600px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -32,7 +43,6 @@ h1 {
 }
 
 .header-text p {
-  width: 43%;
   margin: 0 auto;
   font-size: 1.1rem;
   line-height: 24px;
@@ -41,41 +51,50 @@ h1 {
 
 .download-links {
   list-style: none;
-  display: flex;
-  width: 350px;
+  width: 40%;
   margin: 0 auto;
+  padding: 0;
   justify-content: space-between;
-  padding: 24px 0;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  cursor: pointer;
 }
 
-.download-links a {
+.download-links li {
+  margin-top: 25px;
   text-decoration: none;
+  text-align: center;
   padding: 12px 24px;
   border-radius: 30px;
-  color: white;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  transition: a;
+
 }
 
-.download-links a:nth-of-type(1) {
+.download-links li:first-of-type {
   background-color: hsl(171, 66%, 44%);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.download-links a:nth-of-type(1):hover {
+.download-links li:first-of-type:hover {
   box-shadow: hsla(171, 66%, 44%, 0.822) 0px 13px 27px -35px, hsla(171, 66%, 44%, 0.774) 0px 8px 16px -8px;
 }
 
-.download-links .link a {
+.download-links li:last-of-type {
   background-color: hsl(233, 100%, 69%);
 }
 
-.download-links .link a:hover {
+.download-links li:last-of-type:hover {
   box-shadow: hsl(233, 100%, 69%) 0px 13px 27px -35px, hsl(233, 100%, 69%) 0px 8px 16px -8px;
 }
 
+.download-links a {
+  color: white;
+  text-decoration: none;
+}
+
 .track-section {
-  width: 45%;
+  width: 600px;
   margin: 100px auto;
 
 }
@@ -91,4 +110,57 @@ h1 {
   line-height: 24px;
   color: hsl(201, 11%, 66%);
   text-align: center;
+}
+
+@media(max-width:1097px) {
+  .company-logo {
+    bottom: 50%;
+  }
+}
+
+@media(max-width: 986px) {
+  .company-logo {
+    bottom: 60px;
+  }
+
+  .download-links {
+    width: 60%;
+  }
+
+
+}
+
+@media(max-width: 677px) {
+  header {
+    height: 20%;
+  }
+
+  .company-logo {
+    margin-top: 20px;
+
+  }
+
+  .header-text {
+    width: 100%;
+  }
+
+  .track-section {
+    width: 100%;
+    margin: 10% auto;
+  }
+
+  .download-links {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media(max-width:400px) {
+  .desktop-bg {
+    display: none;
+  }
+
+  .mobile-bg {
+    display: block;
+  }
 }
