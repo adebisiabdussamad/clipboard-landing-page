@@ -141,7 +141,7 @@ h1 {
   width: 55%;
 }
 
-.info-list h4 {
+.info-list h3 {
   font-size: 1.3rem;
   color: hsl(210, 10%, 33%);
 }
@@ -205,7 +205,7 @@ h1 {
   margin: 30px 0;
 }
 
-.more-info h4 {
+.more-info h3 {
   font-size: 1.2rem;
   color: hsl(210, 10%, 33%);
   margin-bottom: 10px;
